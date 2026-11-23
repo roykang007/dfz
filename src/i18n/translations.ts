@@ -19,12 +19,12 @@ export const HK_DISTRICTS: { id: string; label: LocalizedText; region: Localized
 ];
 
 export const CATEGORY_LABELS: Record<string, LocalizedText> = {
-  all: { zh: '全部系列', en: 'All Formulations', ko: '전체 상품' },
-  serum: { zh: '冰感精華', en: 'Cryo Serums', ko: '크라이오 세럼' },
-  cream: { zh: '屏障修護霜', en: 'Barrier Creams', ko: '장벽 리페어 크림' },
-  mist: { zh: '植萃噴霧', en: 'Botanical Mists', ko: '보태니컬 미스트' },
-  wellness: { zh: '內在美學', en: 'Inner Wellness', ko: '이너 뷰티' },
-  ritual: { zh: '限定禮盒', en: 'Curated Rituals', ko: '리추얼 세트' },
+  all: { zh: '全部商品', en: 'All Products', ko: '전체 상품' },
+  serum: { zh: '美妝', en: 'Beauty', ko: '뷰티' },
+  cream: { zh: '時尚', en: 'Fashion', ko: '패션' },
+  mist: { zh: '珠寶', en: 'Jewelry', ko: '주얼리' },
+  wellness: { zh: '運動', en: 'Sports', ko: '스포츠' },
+  ritual: { zh: '兒童及嬰兒', en: 'Kids & Baby', ko: '키즈베이비' },
 };
 
 export function getCategoryLabel(

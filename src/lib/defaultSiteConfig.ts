@@ -91,11 +91,11 @@ export const DEFAULT_SITE_CONFIG: SiteConfig = {
     },
   },
   categories: [
-    { slug: 'serum', label: { zh: '冰感精華', en: 'Cryo Serums', ko: '크라이오 세럼' } },
-    { slug: 'cream', label: { zh: '屏障修護霜', en: 'Barrier Creams', ko: '장벽 리페어 크림' } },
-    { slug: 'mist', label: { zh: '植萃噴霧', en: 'Botanical Mists', ko: '보태니컬 미스트' } },
-    { slug: 'wellness', label: { zh: '內在美學', en: 'Inner Wellness', ko: '이너 뷰티' } },
-    { slug: 'ritual', label: { zh: '限定禮盒', en: 'Curated Rituals', ko: '리추얼 세트' } },
+    { slug: 'serum', label: { zh: '美妝', en: 'Beauty', ko: '뷰티' } },
+    { slug: 'cream', label: { zh: '時尚', en: 'Fashion', ko: '패션' } },
+    { slug: 'mist', label: { zh: '珠寶', en: 'Jewelry', ko: '주얼리' } },
+    { slug: 'wellness', label: { zh: '運動', en: 'Sports', ko: '스포츠' } },
+    { slug: 'ritual', label: { zh: '兒童及嬰兒', en: 'Kids & Baby', ko: '키즈베이비' } },
   ],
   story: {
     visible: true,
