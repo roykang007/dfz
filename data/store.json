@@ -1,0 +1,941 @@
+{
+  "adminCredential": null,
+  "products": [
+    {
+      "id": "prod-cryo-serum",
+      "sku": "DF-SRM-001",
+      "category": "serum",
+      "name": {
+        "zh": "極淨冰萃胜肽保濕精華",
+        "en": "Cryo-Peptide Cellular Serum",
+        "ko": "크라이오 펩타이드 셀룰러 세럼"
+      },
+      "subtitle": {
+        "zh": "4°C 低溫微囊玻尿酸 × 五重修護胜肽",
+        "en": "4°C Cold-Encapsulated Hyaluronate & Penta-Peptide Complex",
+        "ko": "4°C 저온 미세캡슐 히알루론산 · 5중 펩타이드 콤플렉스"
+      },
+      "description": {
+        "zh": "專為香港潮濕悶熱與冷氣乾燥交替氣候設計的高濃度水感精華。採用 4°C 低溫微囊萃取工藝，一抹瞬化冰感水露，72 小時穩定肌底含水量並舒緩泛紅，零黏膩負擔。",
+        "en": "High-potency hydro-gel serum engineered for Hong Kong’s humid summers and dry office air conditioning. Cold-encapsulated penta-peptides deliver 72-hour barrier hydration with a weightless, non-tacky finish.",
+        "ko": "홍콩의 고온다습한 야외와 건조한 실내 냉방 환경에 최적화된 고농축 수분 세럼. 4°C 저온 추출 5중 펩타이드가 끈적임 없이 72시간 피부 장벽 수분을 유지하고 열감을 진정시킵니다."
+      },
+      "ingredients": {
+        "zh": "冰川微囊玻尿酸 2.4%、乙醯基六肽-8、韓國積雪草外泌體、維他命 B5",
+        "en": "2.4% Cryo-Hyaluronate, Acetyl Hexapeptide-8, Centella Exosomes, Panthenol B5",
+        "ko": "크라이오 히알루론산 2.4%, 아세틸헥사펩타이드-8, 병풀 엑소좀, 판테놀 B5"
+      },
+      "volume": "50 ml / 1.69 fl. oz.",
+      "priceHkd": 490,
+      "compareAtHkd": 560,
+      "stock": 64,
+      "status": "ACTIVE",
+      "featured": true,
+      "tag": {
+        "zh": "香港熱銷 No.1",
+        "en": "HK Bestseller",
+        "ko": "홍콩 베스트셀러"
+      },
+      "imageUrl": "/src/assets/images/product_cryo_serum_1795270502338.jpg",
+      "createdAt": "2026-09-10T08:00:00.000Z",
+      "updatedAt": "2026-11-18T10:30:00.000Z"
+    },
+    {
+      "id": "prod-barrier-cream",
+      "sku": "DF-CRM-002",
+      "category": "cream",
+      "name": {
+        "zh": "雲霜神經醯胺鎖水修護霜",
+        "en": "Ceramide Cloud Barrier Cream",
+        "ko": "세라마이드 클라우드 배리어 크림"
+      },
+      "subtitle": {
+        "zh": "三重仿生神經醯胺 × 角鯊烷輕盈乳霜",
+        "en": "Triple Biomimetic Ceramide & Squalane Recovery Cream",
+        "ko": "3중 생체모방 세라마이드 · 식물성 스쿠알란 리페어 크림"
+      },
+      "description": {
+        "zh": "猶如初雪般輕柔化開的舒緩修護霜，精準補充受損角質層所需脂質，有效抵禦空調冷風與都會懸浮微粒造成的乾燥緊繃。",
+        "en": "Air-whipped recovery cream restoring essential skin lipids without heaviness. Shields sensitized skin from air-conditioned dehydration and urban particulates.",
+        "ko": "구름처럼 가볍게 스며드는 장벽 강화 크림. 민감해진 피부 지질 구조를 촘촘히 채워 건조함과 외부 유해 환경으로부터 피부를 보호합니다."
+      },
+      "ingredients": {
+        "zh": "神經醯胺 NP/AP/EOP、甘蔗角鯊烷、白樺樹液、羥基積雪草甙",
+        "en": "Ceramides NP/AP/EOP, Sugarcane Squalane, Birch Sap, Madecassoside",
+        "ko": "세라마이드 NP/AP/EOP, 사탕수수 스쿠알란, 자작나무 수액, 마데카소사이드"
+      },
+      "volume": "50 g / 1.76 oz.",
+      "priceHkd": 440,
+      "stock": 42,
+      "status": "ACTIVE",
+      "featured": true,
+      "tag": {
+        "zh": "敏感肌適用",
+        "en": "Sensitive Safe",
+        "ko": "민감 피부 인증"
+      },
+      "imageUrl": "/src/assets/images/product_barrier_cream_1795270502783.jpg",
+      "createdAt": "2026-09-12T08:00:00.000Z",
+      "updatedAt": "2026-11-17T14:20:00.000Z"
+    },
+    {
+      "id": "prod-botanical-mist",
+      "sku": "DF-MST-003",
+      "category": "mist",
+      "name": {
+        "zh": "零度植萃醒膚冷霧噴霧",
+        "en": "Sub-Zero Botanical Cooling Mist",
+        "ko": "서브제로 보태니컬 쿨링 미스트"
+      },
+      "subtitle": {
+        "zh": "超微米法國霧化噴頭 × 即時降溫 -3.4°C",
+        "en": "Micro-Atomized Glacial Hydrosol · Instant -3.4°C Cooling",
+        "ko": "초미세 안개 분사 · 즉각 피부 온도 -3.4°C 쿨링"
+      },
+      "description": {
+        "zh": "中環寫字樓與戶外通勤必備的隨身降溫保濕霧。極細霧珠不破壞妝容，一噴即時為燥熱泛紅肌膚降溫並補充電解質礦物水分。",
+        "en": "Pocketable micro-mist formulated for Central commutes and afternoon screen fatigue. Ultra-fine droplets refresh makeup while cooling flushed skin on contact.",
+        "ko": "홍콩 도심 이동과 사무실 오후 케어를 위한 초미세 쿨링 미스트. 메이크업 위에도 뭉침 없이 안착해 달아오른 피부를 즉시 진정시킵니다."
+      },
+      "ingredients": {
+        "zh": "阿爾卑斯雪絨花精萃、電解質礦物水、綠茶兒茶素、依克多因",
+        "en": "Alpine Edelweiss Hydrosol, Mineral Electrolytes, Green Tea EGCG, Ectoin",
+        "ko": "알파인 에델바이스 추출물, 미네랄 전해질수, 녹차 카테킨, 엑토인"
+      },
+      "volume": "100 ml / 3.38 fl. oz.",
+      "priceHkd": 280,
+      "stock": 88,
+      "status": "ACTIVE",
+      "featured": true,
+      "imageUrl": "/src/assets/images/product_botanical_mist_1795270503749.jpg",
+      "createdAt": "2026-09-18T08:00:00.000Z",
+      "updatedAt": "2026-11-16T09:10:00.000Z"
+    },
+    {
+      "id": "prod-marine-collagen",
+      "sku": "DF-WLN-004",
+      "category": "wellness",
+      "name": {
+        "zh": "深海極純低分子膠原飲 (14支裝)",
+        "en": "Bio-Marine 500Da Collagen Ampoules (14 Vials)",
+        "ko": "바이오 마린 500Da 콜라겐 앰플 (14병)"
+      },
+      "subtitle": {
+        "zh": "韓國專利 500Da 魚膠原肽 × 穀胱甘肽內服美容",
+        "en": "500Da Hydrolyzed Marine Peptides & Liposomal Glutathione",
+        "ko": "500Da 초저분자 마린 콜라겐 · 리포좀 글루타치온 이너뷰티"
+      },
+      "description": {
+        "zh": "承襲韓國 biodame 內在美學理念，每支蘊含 5,000mg 超低分子深海膠原肽與天然柚子維他命 C，由內而外點亮通透光澤感，零添加蔗糖。",
+        "en": "Inspired by Korean clinical inner-beauty rituals. Each glass vial delivers 5,000mg of 500Da marine collagen peptides paired with Jeju yuzu vitamin C and zero added sugar.",
+        "ko": "한국형 바이오 이너뷰티 철학을 담은 프리미엄 마시는 콜라겐. 1병당 500Da 초저분자 마린 콜라겐 5,000mg과 제주 유자 비타민C를 무설탕 포뮬러로 담았습니다."
+      },
+      "ingredients": {
+        "zh": "500Da 深海魚膠原蛋白肽 5,000mg、脂質體穀胱甘肽、濟州柚子維C、透明質酸鈉",
+        "en": "5,000mg 500Da Marine Collagen, Liposomal Glutathione, Jeju Yuzu Vitamin C, Oral HA",
+        "ko": "500Da 마린 콜라겐 5,000mg, 리포좀 글루타치온, 제주 유자 비타민C, 히알루론산"
+      },
+      "volume": "14 × 25 ml",
+      "priceHkd": 520,
+      "compareAtHkd": 590,
+      "stock": 19,
+      "status": "ACTIVE",
+      "featured": true,
+      "tag": {
+        "zh": "韓國研發",
+        "en": "Seoul Bio-Lab",
+        "ko": "서울 바이오랩"
+      },
+      "imageUrl": "/src/assets/images/product_cryo_serum_1795270502338.jpg",
+      "createdAt": "2026-10-01T08:00:00.000Z",
+      "updatedAt": "2026-11-19T11:00:00.000Z"
+    },
+    {
+      "id": "prod-night-recovery",
+      "sku": "DF-CRM-005",
+      "category": "cream",
+      "name": {
+        "zh": "極光外泌體夜間修護凝膜",
+        "en": "Exosome Overnight Cryo Mask",
+        "ko": "엑소좀 오버나이트 크라이오 마스크"
+      },
+      "subtitle": {
+        "zh": "免沖洗睡眠微涼凝膜 × 隔夜重煥彈潤",
+        "en": "Leave-On Cooling Recovery Gel Mask for Overnight Renewal",
+        "ko": "슬리핑 쿨링 리커버리 젤 마스크 · 밤사이 탄력 집중 케어"
+      },
+      "description": {
+        "zh": "針對熬夜暗沉與紫外線熱老化設計的晚間修護凝膜，形成透氣鎖水膜層，翌日醒來肌膚細緻勻亮。",
+        "en": "Designed for late Hong Kong nights and UV thermal stress. Forms a breathable moisture veil that restores radiance and bounce by morning.",
+        "ko": "지친 피부와 열노화 케어를 위한 나이트 슬리핑 마스크. 밤사이 피부에 숨 쉬는 수분막을 형성해 다음 날 아침 맑고 탄력 있는 피부결을 선사합니다."
+      },
+      "ingredients": {
+        "zh": "植物外泌體複合物、菸鹼醯胺 4%、藍銅胜肽、海藻糖",
+        "en": "Botanical Exosome Complex, 4% Niacinamide, Copper Tripeptide-1, Trehalose",
+        "ko": "식물성 엑소좀 복합체, 나이아신아마이드 4%, 카퍼트리펩타이드-1, 트레할로스"
+      },
+      "volume": "60 ml / 2.02 fl. oz.",
+      "priceHkd": 460,
+      "stock": 7,
+      "status": "ACTIVE",
+      "featured": true,
+      "tag": {
+        "zh": "少量現貨",
+        "en": "Limited Batch",
+        "ko": "소량 입고"
+      },
+      "imageUrl": "/src/assets/images/product_barrier_cream_1795270502783.jpg",
+      "createdAt": "2026-10-12T08:00:00.000Z",
+      "updatedAt": "2026-11-20T09:00:00.000Z"
+    },
+    {
+      "id": "prod-hk-ritual-set",
+      "sku": "DF-RTL-006",
+      "category": "ritual",
+      "name": {
+        "zh": "中環極淨三步修護限定禮盒",
+        "en": "The Central Cryo-Hydration Ritual Set",
+        "ko": "센트럴 크라이오 3-스텝 리추얼 기프트 세트"
+      },
+      "subtitle": {
+        "zh": "冰萃精華 50ml + 雲霜 50g + 冷霧噴霧 100ml",
+        "en": "Cryo Serum 50ml + Ceramide Cream 50g + Botanical Mist 100ml",
+        "ko": "크라이오 세럼 50ml + 배리어 크림 50g + 쿨링 미스트 100ml"
+      },
+      "description": {
+        "zh": "dufreez.com 標誌性三步驟完整日常儀式，附設香港中環限定冷壓壓紋禮盒包裝，自用與送禮皆享組合優惠。",
+        "en": "Our complete three-step daily regimen housed in an embossed Hong Kong signature keepsake box, curated with complimentary gift wrapping.",
+        "ko": "dufreez.com의 핵심 3단계 스킨케어를 한 번에 경험하는 시그니처 기프트 세트. 홍콩 센트럴 에디션 패키지와 기프트 랩핑이 함께 제공됩니다."
+      },
+      "ingredients": {
+        "zh": "包含全系列三款正裝核心配方與極簡環保禮盒",
+        "en": "Includes all 3 full-size signature formulations in FSC-certified packaging",
+        "ko": "대표 정품 3종 풀사이즈 및 FSC 인증 친환경 기프트 박스 구성"
+      },
+      "volume": "3 Full-Size Pieces",
+      "priceHkd": 1080,
+      "compareAtHkd": 1210,
+      "stock": 28,
+      "status": "ACTIVE",
+      "featured": true,
+      "tag": {
+        "zh": "套裝省 HK$130",
+        "en": "Save HK$130",
+        "ko": "세트 HK$130 할인"
+      },
+      "imageUrl": "/src/assets/images/hero_dufreez_campaign_1795270503125.jpg",
+      "createdAt": "2026-10-20T08:00:00.000Z",
+      "updatedAt": "2026-11-20T12:00:00.000Z"
+    }
+  ],
+  "orders": [
+    {
+      "id": "ord-1042",
+      "orderNumber": "DF-2026-1042",
+      "trackingNumber": "SFHK88291044",
+      "courier": "SF Express Hong Kong",
+      "customerName": "Chloe Chan (陳嘉敏)",
+      "customerEmail": "chloe.chan@hkmail.com",
+      "customerPhone": "+852 9124 8831",
+      "district": "Central & Western",
+      "address": "Unit 2402, Two IFC, 8 Finance Street, Central",
+      "deliveryMethod": "SF_DOOR",
+      "paymentMethod": "FPS",
+      "paymentReference": "FPS-HK-261120-8841",
+      "paymentStatus": "PAID",
+      "orderStatus": "OUT_FOR_DELIVERY",
+      "subtotalHkd": 1570,
+      "shippingHkd": 0,
+      "totalHkd": 1570,
+      "items": [
+        {
+          "productId": "prod-hk-ritual-set",
+          "sku": "DF-RTL-006",
+          "name": {
+            "zh": "中環極淨三步修護限定禮盒",
+            "en": "The Central Cryo-Hydration Ritual Set",
+            "ko": "센트럴 크라이오 3-스텝 리추얼 기프트 세트"
+          },
+          "quantity": 1,
+          "unitPriceHkd": 1080,
+          "lineTotalHkd": 1080,
+          "imageUrl": "/src/assets/images/hero_dufreez_campaign_1795270503125.jpg"
+        },
+        {
+          "productId": "prod-cryo-serum",
+          "sku": "DF-SRM-001",
+          "name": {
+            "zh": "極淨冰萃胜肽保濕精華",
+            "en": "Cryo-Peptide Cellular Serum",
+            "ko": "크라이오 펩타이드 셀룰러 세럼"
+          },
+          "quantity": 1,
+          "unitPriceHkd": 490,
+          "lineTotalHkd": 490,
+          "imageUrl": "/src/assets/images/product_cryo_serum_1795270502338.jpg"
+        }
+      ],
+      "shipmentEvents": [
+        {
+          "id": "ev-1042-1",
+          "status": "CONFIRMED",
+          "location": {
+            "zh": "香港線上商城 dufreez.com",
+            "en": "dufreez.com Hong Kong",
+            "ko": "dufreez.com 홍콩 스토어"
+          },
+          "note": {
+            "zh": "已收到轉數快 FPS 即時付款確認。",
+            "en": "Instant FPS payment verified and order confirmed.",
+            "ko": "FPS 즉시 결제가 확인되어 주문이 접수되었습니다."
+          },
+          "timestamp": "2026-11-19T14:20:00.000Z"
+        },
+        {
+          "id": "ev-1042-2",
+          "status": "PACKING",
+          "location": {
+            "zh": "葵涌冷鏈恆溫物流倉",
+            "en": "Kwai Chung Cold-Chain Hub",
+            "ko": "홍콩 콰이청 콜드체인 허브"
+          },
+          "note": {
+            "zh": "已完成 4°C 溫控氣泡箱封裝及品檢。",
+            "en": "Quality inspected and sealed in 4°C thermal packaging.",
+            "ko": "4°C 정온 보냉 패키지 검수 및 포장이 완료되었습니다."
+          },
+          "timestamp": "2026-11-19T16:45:00.000Z"
+        },
+        {
+          "id": "ev-1042-3",
+          "status": "DISPATCHED",
+          "location": {
+            "zh": "青衣順豐香港分撥中心",
+            "en": "SF Express Tsing Yi Sorting Center",
+            "ko": "SF Express 칭이 분류 센터"
+          },
+          "note": {
+            "zh": "順豐速運已攬收包裹並掃描運單 SFHK88291044。",
+            "en": "Collected by SF Express courier and scanned at Tsing Yi hub.",
+            "ko": "SF Express 집하 완료 및 운송장 SFHK88291044 스캔."
+          },
+          "timestamp": "2026-11-20T02:10:00.000Z"
+        },
+        {
+          "id": "ev-1042-4",
+          "status": "OUT_FOR_DELIVERY",
+          "location": {
+            "zh": "香港中環金融街派送站",
+            "en": "Central Finance Street Delivery Station",
+            "ko": "홍콩 센트럴 파이낸스 스트리트 배송지점"
+          },
+          "note": {
+            "zh": "順豐派送員正在派送途中，預計今日 18:00 前送達。",
+            "en": "Out for delivery with SF Express courier; expected before 6:00 PM HKT.",
+            "ko": "SF Express 배송 기사가 배송 중입니다. 금일 HKT 18:00 전 도착 예정."
+          },
+          "timestamp": "2026-11-21T01:30:00.000Z"
+        }
+      ],
+      "preferredLang": "zh",
+      "createdAt": "2026-11-19T14:20:00.000Z",
+      "updatedAt": "2026-11-21T01:30:00.000Z"
+    },
+    {
+      "id": "ord-1041",
+      "orderNumber": "DF-2026-1041",
+      "trackingNumber": "SFHK88290981",
+      "courier": "SF Express Hong Kong",
+      "customerName": "Jiyoon Park (박지윤)",
+      "customerEmail": "jiyoon.park@seoulhk.kr",
+      "customerPhone": "+852 5492 1038",
+      "district": "Yau Tsim Mong",
+      "address": "SF Locker H852BD04P, Harbour City, Tsim Sha Tsui",
+      "deliveryMethod": "SF_LOCKER",
+      "paymentMethod": "PAYME",
+      "paymentReference": "PAYME-HSBC-992104",
+      "paymentStatus": "PAID",
+      "orderStatus": "IN_TRANSIT",
+      "subtotalHkd": 1010,
+      "shippingHkd": 0,
+      "totalHkd": 1010,
+      "items": [
+        {
+          "productId": "prod-marine-collagen",
+          "sku": "DF-WLN-004",
+          "name": {
+            "zh": "深海極純低分子膠原飲 (14支裝)",
+            "en": "Bio-Marine 500Da Collagen Ampoules (14 Vials)",
+            "ko": "바이오 마린 500Da 콜라겐 앰플 (14병)"
+          },
+          "quantity": 1,
+          "unitPriceHkd": 520,
+          "lineTotalHkd": 520,
+          "imageUrl": "/src/assets/images/product_cryo_serum_1795270502338.jpg"
+        },
+        {
+          "productId": "prod-cryo-serum",
+          "sku": "DF-SRM-001",
+          "name": {
+            "zh": "極淨冰萃胜肽保濕精華",
+            "en": "Cryo-Peptide Cellular Serum",
+            "ko": "크라이오 펩타이드 셀룰러 세럼"
+          },
+          "quantity": 1,
+          "unitPriceHkd": 490,
+          "lineTotalHkd": 490,
+          "imageUrl": "/src/assets/images/product_cryo_serum_1795270502338.jpg"
+        }
+      ],
+      "shipmentEvents": [
+        {
+          "id": "ev-1041-1",
+          "status": "CONFIRMED",
+          "location": {
+            "zh": "香港線上商城 dufreez.com",
+            "en": "dufreez.com Hong Kong",
+            "ko": "dufreez.com 홍콩 스토어"
+          },
+          "note": {
+            "zh": "已透過 PayMe by HSBC 完成付款。",
+            "en": "Payment authorized via PayMe by HSBC.",
+            "ko": "HSBC PayMe 결제가 승인되었습니다."
+          },
+          "timestamp": "2026-11-20T05:22:00.000Z"
+        },
+        {
+          "id": "ev-1041-2",
+          "status": "DISPATCHED",
+          "location": {
+            "zh": "葵涌冷鏈恆溫物流倉",
+            "en": "Kwai Chung Cold-Chain Hub",
+            "ko": "홍콩 콰이청 콜드체인 허브"
+          },
+          "note": {
+            "zh": "已交付順豐智能櫃專車發往九龍尖沙咀。",
+            "en": "Handed to SF Express Kowloon locker shuttle.",
+            "ko": "구룡 침사추이 스마트락커 전용 차량으로 출고되었습니다."
+          },
+          "timestamp": "2026-11-20T10:15:00.000Z"
+        },
+        {
+          "id": "ev-1041-3",
+          "status": "IN_TRANSIT",
+          "location": {
+            "zh": "九龍尖沙咀順豐分撥點",
+            "en": "Kowloon Tsim Sha Tsui SF Hub",
+            "ko": "구룡 침사추이 SF 물류 거점"
+          },
+          "note": {
+            "zh": "包裹已抵達尖沙咀站，正安排投入海港城智能櫃。",
+            "en": "Arrived at Tsim Sha Tsui hub; queued for Harbour City SF Locker.",
+            "ko": "침사추이 허브 도착, 하버시티 스마트락커 투입 대기 중입니다."
+          },
+          "timestamp": "2026-11-21T00:10:00.000Z"
+        }
+      ],
+      "preferredLang": "ko",
+      "createdAt": "2026-11-20T05:22:00.000Z",
+      "updatedAt": "2026-11-21T00:10:00.000Z"
+    },
+    {
+      "id": "ord-1040",
+      "orderNumber": "DF-2026-1040",
+      "trackingNumber": "SFHK88290712",
+      "courier": "SF Express Hong Kong",
+      "customerName": "Daniel Wong (黃子軒)",
+      "customerEmail": "daniel.wong@pacific.hk",
+      "customerPhone": "+852 6301 4429",
+      "district": "Wan Chai",
+      "address": "18/F, Lee Garden Two, 28 Yun Ping Road, Causeway Bay",
+      "deliveryMethod": "SF_DOOR",
+      "paymentMethod": "OCTOPUS",
+      "paymentReference": "OCT-HK-7748201",
+      "paymentStatus": "PAID",
+      "orderStatus": "DELIVERED",
+      "subtotalHkd": 900,
+      "shippingHkd": 0,
+      "totalHkd": 900,
+      "items": [
+        {
+          "productId": "prod-barrier-cream",
+          "sku": "DF-CRM-002",
+          "name": {
+            "zh": "雲霜神經醯胺鎖水修護霜",
+            "en": "Ceramide Cloud Barrier Cream",
+            "ko": "세라마이드 클라우드 배리어 크림"
+          },
+          "quantity": 1,
+          "unitPriceHkd": 440,
+          "lineTotalHkd": 440,
+          "imageUrl": "/src/assets/images/product_barrier_cream_1795270502783.jpg"
+        },
+        {
+          "productId": "prod-night-recovery",
+          "sku": "DF-CRM-005",
+          "name": {
+            "zh": "極光外泌體夜間修護凝膜",
+            "en": "Exosome Overnight Cryo Mask",
+            "ko": "엑소좀 오버나이트 크라이오 마스크"
+          },
+          "quantity": 1,
+          "unitPriceHkd": 460,
+          "lineTotalHkd": 460,
+          "imageUrl": "/src/assets/images/product_barrier_cream_1795270502783.jpg"
+        }
+      ],
+      "shipmentEvents": [
+        {
+          "id": "ev-1040-1",
+          "status": "CONFIRMED",
+          "location": {
+            "zh": "香港線上商城 dufreez.com",
+            "en": "dufreez.com Hong Kong",
+            "ko": "dufreez.com 홍콩 스토어"
+          },
+          "note": {
+            "zh": "已透過八達通銀包完成付款。",
+            "en": "Paid via Octopus Wallet.",
+            "ko": "옥토퍼스 월렛 결제가 완료되었습니다."
+          },
+          "timestamp": "2026-11-18T03:10:00.000Z"
+        },
+        {
+          "id": "ev-1040-2",
+          "status": "DISPATCHED",
+          "location": {
+            "zh": "青衣順豐香港分撥中心",
+            "en": "SF Express Tsing Yi Hub",
+            "ko": "SF Express 칭이 허브"
+          },
+          "note": {
+            "zh": "順豐速運已發往銅鑼灣派送站。",
+            "en": "Dispatched to Causeway Bay SF depot.",
+            "ko": "코즈웨이베이 배송지점으로 발송되었습니다."
+          },
+          "timestamp": "2026-11-18T11:30:00.000Z"
+        },
+        {
+          "id": "ev-1040-3",
+          "status": "DELIVERED",
+          "location": {
+            "zh": "銅鑼灣利園二期前台簽收",
+            "en": "Lee Garden Two Reception, Causeway Bay",
+            "ko": "코즈웨이베이 리가든2 리셉션 수령 완료"
+          },
+          "note": {
+            "zh": "已由收件人簽收完成。",
+            "en": "Signed and delivered to recipient.",
+            "ko": "수령인 확인 후 배송이 완료되었습니다."
+          },
+          "timestamp": "2026-11-19T06:40:00.000Z"
+        }
+      ],
+      "preferredLang": "en",
+      "createdAt": "2026-11-18T03:10:00.000Z",
+      "updatedAt": "2026-11-19T06:40:00.000Z"
+    },
+    {
+      "id": "ord-1039",
+      "orderNumber": "DF-2026-1039",
+      "trackingNumber": "SFHK88289401",
+      "courier": "SF Express Hong Kong",
+      "customerName": "Vivian Lam (林婉婷)",
+      "customerEmail": "vivian.lam@studio.hk",
+      "customerPhone": "+852 9871 2254",
+      "district": "Sha Tin",
+      "address": "Flat B, 16/F, Block 3, New Town Plaza, Sha Tin",
+      "deliveryMethod": "SF_DOOR",
+      "paymentMethod": "ALIPAY_HK",
+      "paymentReference": "ALIPAYHK-261117-512",
+      "paymentStatus": "PAID",
+      "orderStatus": "DELIVERED",
+      "subtotalHkd": 1080,
+      "shippingHkd": 0,
+      "totalHkd": 1080,
+      "items": [
+        {
+          "productId": "prod-hk-ritual-set",
+          "sku": "DF-RTL-006",
+          "name": {
+            "zh": "中環極淨三步修護限定禮盒",
+            "en": "The Central Cryo-Hydration Ritual Set",
+            "ko": "센트럴 크라이오 3-스텝 리추얼 기프트 세트"
+          },
+          "quantity": 1,
+          "unitPriceHkd": 1080,
+          "lineTotalHkd": 1080,
+          "imageUrl": "/src/assets/images/hero_dufreez_campaign_1795270503125.jpg"
+        }
+      ],
+      "shipmentEvents": [
+        {
+          "id": "ev-1039-1",
+          "status": "CONFIRMED",
+          "location": {
+            "zh": "香港線上商城 dufreez.com",
+            "en": "dufreez.com Hong Kong",
+            "ko": "dufreez.com 홍콩 스토어"
+          },
+          "note": {
+            "zh": "AlipayHK 付款已確認。",
+            "en": "AlipayHK settlement confirmed.",
+            "ko": "AlipayHK 결제가 확인되었습니다."
+          },
+          "timestamp": "2026-11-17T08:00:00.000Z"
+        },
+        {
+          "id": "ev-1039-2",
+          "status": "DELIVERED",
+          "location": {
+            "zh": "新界沙田新城市廣場",
+            "en": "New Town Plaza, Sha Tin",
+            "ko": "신계 샤틴 뉴타운플라자"
+          },
+          "note": {
+            "zh": "順豐上門派送已簽收。",
+            "en": "Delivered by SF Express courier.",
+            "ko": "SF Express 문 앞 배송 완료."
+          },
+          "timestamp": "2026-11-18T09:15:00.000Z"
+        }
+      ],
+      "preferredLang": "zh",
+      "createdAt": "2026-11-17T08:00:00.000Z",
+      "updatedAt": "2026-11-18T09:15:00.000Z"
+    },
+    {
+      "id": "ord-1038",
+      "orderNumber": "DF-2026-1038",
+      "trackingNumber": "SFHK88288110",
+      "courier": "Central Atelier Pickup",
+      "customerName": "Marcus Leung (梁俊熙)",
+      "customerEmail": "m.leung@centralfin.hk",
+      "customerPhone": "+852 6811 7740",
+      "district": "Central & Western",
+      "address": "DUFREEZ Central Flagship Pickup, 88 Queen’s Road Central",
+      "deliveryMethod": "CENTRAL_PICKUP",
+      "paymentMethod": "CARD",
+      "paymentReference": "VISA-HKD-4242-9012",
+      "paymentStatus": "PAID",
+      "orderStatus": "PACKING",
+      "subtotalHkd": 770,
+      "shippingHkd": 0,
+      "totalHkd": 770,
+      "items": [
+        {
+          "productId": "prod-cryo-serum",
+          "sku": "DF-SRM-001",
+          "name": {
+            "zh": "極淨冰萃胜肽保濕精華",
+            "en": "Cryo-Peptide Cellular Serum",
+            "ko": "크라이오 펩타이드 셀룰러 세럼"
+          },
+          "quantity": 1,
+          "unitPriceHkd": 490,
+          "lineTotalHkd": 490,
+          "imageUrl": "/src/assets/images/product_cryo_serum_1795270502338.jpg"
+        },
+        {
+          "productId": "prod-botanical-mist",
+          "sku": "DF-MST-003",
+          "name": {
+            "zh": "零度植萃醒膚冷霧噴霧",
+            "en": "Sub-Zero Botanical Cooling Mist",
+            "ko": "서브제로 보태니컬 쿨링 미스트"
+          },
+          "quantity": 1,
+          "unitPriceHkd": 280,
+          "lineTotalHkd": 280,
+          "imageUrl": "/src/assets/images/product_botanical_mist_1795270503749.jpg"
+        }
+      ],
+      "shipmentEvents": [
+        {
+          "id": "ev-1038-1",
+          "status": "CONFIRMED",
+          "location": {
+            "zh": "香港線上商城 dufreez.com",
+            "en": "dufreez.com Hong Kong",
+            "ko": "dufreez.com 홍콩 스토어"
+          },
+          "note": {
+            "zh": "信用卡 HKD 付款已授權。",
+            "en": "Visa HKD payment authorized.",
+            "ko": "Visa HKD 결제가 승인되었습니다."
+          },
+          "timestamp": "2026-11-20T11:30:00.000Z"
+        },
+        {
+          "id": "ev-1038-2",
+          "status": "PACKING",
+          "location": {
+            "zh": "中環皇后大道中 88 號旗艦店",
+            "en": "Central Flagship, 88 Queen’s Road",
+            "ko": "센트럴 퀸즈로드 88 플래그십 스토어"
+          },
+          "note": {
+            "zh": "正在備貨包裝，備妥後將發送短訊通知自取。",
+            "en": "Preparing gift bag for flagship pickup.",
+            "ko": "플래그십 픽업 패키지 준비 중입니다."
+          },
+          "timestamp": "2026-11-21T02:00:00.000Z"
+        }
+      ],
+      "preferredLang": "en",
+      "createdAt": "2026-11-20T11:30:00.000Z",
+      "updatedAt": "2026-11-21T02:00:00.000Z"
+    },
+    {
+      "id": "ord-1037",
+      "orderNumber": "DF-2026-1037",
+      "trackingNumber": "SFHK88287320",
+      "courier": "SF Express Hong Kong",
+      "customerName": "Sora Kim (김소라)",
+      "customerEmail": "sora.kim@kowloon.hk",
+      "customerPhone": "+852 5118 9302",
+      "district": "Tseung Kwan O",
+      "address": "Tower 5, LOHAS Park, Tseung Kwan O",
+      "deliveryMethod": "SF_DOOR",
+      "paymentMethod": "WECHAT_PAY_HK",
+      "paymentReference": "WXPAYHK-261116-309",
+      "paymentStatus": "PAID",
+      "orderStatus": "DELIVERED",
+      "subtotalHkd": 1040,
+      "shippingHkd": 0,
+      "totalHkd": 1040,
+      "items": [
+        {
+          "productId": "prod-marine-collagen",
+          "sku": "DF-WLN-004",
+          "name": {
+            "zh": "深海極純低分子膠原飲 (14支裝)",
+            "en": "Bio-Marine 500Da Collagen Ampoules (14 Vials)",
+            "ko": "바이오 마린 500Da 콜라겐 앰플 (14병)"
+          },
+          "quantity": 2,
+          "unitPriceHkd": 520,
+          "lineTotalHkd": 1040,
+          "imageUrl": "/src/assets/images/product_cryo_serum_1795270502338.jpg"
+        }
+      ],
+      "shipmentEvents": [
+        {
+          "id": "ev-1037-1",
+          "status": "CONFIRMED",
+          "location": {
+            "zh": "香港線上商城 dufreez.com",
+            "en": "dufreez.com Hong Kong",
+            "ko": "dufreez.com 홍콩 스토어"
+          },
+          "note": {
+            "zh": "WeChat Pay HK 付款完成。",
+            "en": "WeChat Pay HK verified.",
+            "ko": "WeChat Pay HK 결제가 완료되었습니다."
+          },
+          "timestamp": "2026-11-16T07:10:00.000Z"
+        },
+        {
+          "id": "ev-1037-2",
+          "status": "DELIVERED",
+          "location": {
+            "zh": "將軍澳日出康城 5 座",
+            "en": "LOHAS Park Tower 5, Tseung Kwan O",
+            "ko": "정관오 로하스파크 5동"
+          },
+          "note": {
+            "zh": "包裹已安全送達。",
+            "en": "Delivered safely via SF Express.",
+            "ko": "SF Express 배송 완료."
+          },
+          "timestamp": "2026-11-17T08:45:00.000Z"
+        }
+      ],
+      "preferredLang": "ko",
+      "createdAt": "2026-11-16T07:10:00.000Z",
+      "updatedAt": "2026-11-17T08:45:00.000Z"
+    },
+    {
+      "id": "ord-1036",
+      "orderNumber": "DF-2026-1036",
+      "trackingNumber": "SFHK88286904",
+      "courier": "SF Express Hong Kong",
+      "customerName": "Eunice Ho (何思穎)",
+      "customerEmail": "eunice.ho@hku.hk",
+      "customerPhone": "+852 9455 3109",
+      "district": "Kwun Tong",
+      "address": "Unit 905, Millennium City 5, Kwun Tong",
+      "deliveryMethod": "SF_LOCKER",
+      "paymentMethod": "FPS",
+      "paymentReference": "FPS-HK-261115-4190",
+      "paymentStatus": "PAID",
+      "orderStatus": "DELIVERED",
+      "subtotalHkd": 720,
+      "shippingHkd": 0,
+      "totalHkd": 720,
+      "items": [
+        {
+          "productId": "prod-barrier-cream",
+          "sku": "DF-CRM-002",
+          "name": {
+            "zh": "雲霜神經醯胺鎖水修護霜",
+            "en": "Ceramide Cloud Barrier Cream",
+            "ko": "세라마이드 클라우드 배리어 크림"
+          },
+          "quantity": 1,
+          "unitPriceHkd": 440,
+          "lineTotalHkd": 440,
+          "imageUrl": "/src/assets/images/product_barrier_cream_1795270502783.jpg"
+        },
+        {
+          "productId": "prod-botanical-mist",
+          "sku": "DF-MST-003",
+          "name": {
+            "zh": "零度植萃醒膚冷霧噴霧",
+            "en": "Sub-Zero Botanical Cooling Mist",
+            "ko": "서브제로 보태니컬 쿨링 미스트"
+          },
+          "quantity": 1,
+          "unitPriceHkd": 280,
+          "lineTotalHkd": 280,
+          "imageUrl": "/src/assets/images/product_botanical_mist_1795270503749.jpg"
+        }
+      ],
+      "shipmentEvents": [
+        {
+          "id": "ev-1036-1",
+          "status": "CONFIRMED",
+          "location": {
+            "zh": "香港線上商城 dufreez.com",
+            "en": "dufreez.com Hong Kong",
+            "ko": "dufreez.com 홍콩 스토어"
+          },
+          "note": {
+            "zh": "轉數快 FPS 付款確認。",
+            "en": "FPS payment confirmed.",
+            "ko": "FPS 결제가 확인되었습니다."
+          },
+          "timestamp": "2026-11-15T04:15:00.000Z"
+        },
+        {
+          "id": "ev-1036-2",
+          "status": "DELIVERED",
+          "location": {
+            "zh": "觀塘創紀之城順豐智能櫃",
+            "en": "Millennium City SF Locker, Kwun Tong",
+            "ko": "쿤통 밀레니엄시티 SF 락커"
+          },
+          "note": {
+            "zh": "客戶已於智能櫃取件完成。",
+            "en": "Collected from SF Locker by customer.",
+            "ko": "고객 스마트락커 수령 완료."
+          },
+          "timestamp": "2026-11-16T05:30:00.000Z"
+        }
+      ],
+      "preferredLang": "zh",
+      "createdAt": "2026-11-15T04:15:00.000Z",
+      "updatedAt": "2026-11-16T05:30:00.000Z"
+    }
+  ],
+  "members": [
+    {
+      "id": "mem-101",
+      "name": "Chloe Chan (陳嘉敏)",
+      "email": "chloe.chan@hkmail.com",
+      "phone": "+852 9124 8831",
+      "district": "Central & Western",
+      "tier": "CRYO_VIP",
+      "preferredLang": "zh",
+      "totalOrders": 7,
+      "totalSpentHkd": 6420,
+      "status": "ACTIVE",
+      "joinedAt": "2026-06-14T09:20:00.000Z",
+      "lastOrderAt": "2026-11-20T08:40:00.000Z"
+    },
+    {
+      "id": "mem-102",
+      "name": "Daniel Wong (黃子軒)",
+      "email": "daniel.wong@pacific.hk",
+      "phone": "+852 6301 4429",
+      "district": "Wan Chai",
+      "tier": "GLACIER_GOLD",
+      "preferredLang": "en",
+      "totalOrders": 4,
+      "totalSpentHkd": 3180,
+      "status": "ACTIVE",
+      "joinedAt": "2026-07-22T14:15:00.000Z",
+      "lastOrderAt": "2026-11-19T16:10:00.000Z"
+    },
+    {
+      "id": "mem-103",
+      "name": "Jiyoon Park (박지윤)",
+      "email": "jiyoon.park@seoulhk.kr",
+      "phone": "+852 5492 1038",
+      "district": "Yau Tsim Mong",
+      "tier": "CRYO_VIP",
+      "preferredLang": "ko",
+      "totalOrders": 6,
+      "totalSpentHkd": 5290,
+      "status": "ACTIVE",
+      "joinedAt": "2026-05-03T11:00:00.000Z",
+      "lastOrderAt": "2026-11-20T13:22:00.000Z"
+    },
+    {
+      "id": "mem-104",
+      "name": "Vivian Lam (林婉婷)",
+      "email": "vivian.lam@studio.hk",
+      "phone": "+852 9871 2254",
+      "district": "Sha Tin",
+      "tier": "GLACIER_GOLD",
+      "preferredLang": "zh",
+      "totalOrders": 3,
+      "totalSpentHkd": 2140,
+      "status": "ACTIVE",
+      "joinedAt": "2026-08-19T10:05:00.000Z",
+      "lastOrderAt": "2026-11-18T11:45:00.000Z"
+    },
+    {
+      "id": "mem-105",
+      "name": "Marcus Leung (梁俊熙)",
+      "email": "m.leung@centralfin.hk",
+      "phone": "+852 6811 7740",
+      "district": "Central & Western",
+      "tier": "SILVER",
+      "preferredLang": "en",
+      "totalOrders": 2,
+      "totalSpentHkd": 1010,
+      "status": "ACTIVE",
+      "joinedAt": "2026-10-04T07:50:00.000Z",
+      "lastOrderAt": "2026-11-17T09:15:00.000Z"
+    },
+    {
+      "id": "mem-106",
+      "name": "Sora Kim (김소라)",
+      "email": "sora.kim@kowloon.hk",
+      "phone": "+852 5118 9302",
+      "district": "Tseung Kwan O",
+      "tier": "GLACIER_GOLD",
+      "preferredLang": "ko",
+      "totalOrders": 4,
+      "totalSpentHkd": 2940,
+      "status": "ACTIVE",
+      "joinedAt": "2026-07-08T13:30:00.000Z",
+      "lastOrderAt": "2026-11-16T18:30:00.000Z"
+    },
+    {
+      "id": "mem-107",
+      "name": "Eunice Ho (何思穎)",
+      "email": "eunice.ho@hku.hk",
+      "phone": "+852 9455 3109",
+      "district": "Kwun Tong",
+      "tier": "SILVER",
+      "preferredLang": "zh",
+      "totalOrders": 2,
+      "totalSpentHkd": 930,
+      "status": "ACTIVE",
+      "joinedAt": "2026-09-25T15:10:00.000Z",
+      "lastOrderAt": "2026-11-15T12:20:00.000Z"
+    }
+  ]
+}

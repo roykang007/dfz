@@ -1,0 +1,6 @@
+{
+  "name": "DUFREEZ Hong Kong",
+  "description": "Hong Kong D2C cryo-botanical skincare and wellness commerce platform (dufreez.com) with ZH/EN/KO support, local HK payments, shipment tracking, and admin console.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
