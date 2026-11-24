@@ -19,6 +19,7 @@ import {
   createProductRecord,
   deleteMemberRecord,
   deleteProductRecord,
+  ensureDatabaseReady,
   findMemberByEmail,
   findOrderForTracking,
   getPublicProductById,
@@ -430,6 +431,7 @@ async function startServer() {
 
   app.get('/api/v1/site-config', async (_req: Request, res: Response) => {
     try {
+      res.setHeader('Cache-Control', 'no-store');
       const config = await getSiteConfig();
       res.json({ config });
     } catch (error) {
@@ -440,6 +442,7 @@ async function startServer() {
 
   app.get('/api/v1/products', async (req: Request, res: Response) => {
     try {
+      res.setHeader('Cache-Control', 'no-store');
       const category = sanitizeText(req.query.category, 32).toLowerCase();
       const q = sanitizeText(req.query.q, 80);
       const safeCategory = category && isValidCategorySlug(category) ? category : undefined;
@@ -1211,7 +1214,11 @@ async function startServer() {
     app.use(vite.middlewares);
   } else {
     const distDir = path.resolve(process.cwd(), 'dist');
+    const srcAssetsDir = path.resolve(process.cwd(), 'src', 'assets');
     app.use(express.static(distDir));
+    if (fs.existsSync(srcAssetsDir)) {
+      app.use('/src/assets', express.static(srcAssetsDir));
+    }
     app.get('*', (req, res, next) => {
       if (req.path.startsWith('/api/')) {
         res.status(404).json({ error: 'API endpoint not found.' });
@@ -1225,6 +1232,10 @@ async function startServer() {
       }
     });
   }
+
+  ensureDatabaseReady().catch((err) => {
+    console.error('Startup catalog sync warning (will retry on first request):', err);
+  });
 
   app.listen(PORT, '0.0.0.0', () => {
     console.log(`DUFREEZ Hong Kong Commerce Server listening on http://0.0.0.0:${PORT}`);

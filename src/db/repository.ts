@@ -31,13 +31,144 @@ import {
 import { SEED_MEMBERS, SEED_ORDERS, SEED_PRODUCTS } from './seedData.ts';
 import { isBootstrapAdminEmail } from './users.ts';
 
+const SITE_CONFIG_KEY = 'storefront';
+
 let seedPromise: Promise<void> | null = null;
+
+const LEGACY_SKINCARE_SKUS = new Set([
+  'DF-SRM-001',
+  'DF-CRM-002',
+  'DF-MST-003',
+  'DF-WLN-004',
+  'DF-CRM-005',
+  'DF-RTL-006',
+]);
+
+const LEGACY_CATEGORY_LABELS = new Set([
+  'Cryo Serums',
+  'Barrier Creams',
+  'Botanical Mists',
+  'Inner Wellness',
+  'Curated Rituals',
+  '冰感精華',
+  '屏障修護霜',
+  '植萃噴霧',
+  '內在美學',
+  '限定禮盒',
+  '크라이오 세럼',
+  '장벽 리페어 크림',
+  '보태니컬 미스트',
+  '이너 뷰티',
+  '리추얼 세트',
+]);
+
+function isLegacySeedProductRow(row: typeof products.$inferSelect): boolean {
+  if (LEGACY_SKINCARE_SKUS.has(row.sku)) return true;
+  if (row.id === 'prod-barrier-cream' && row.imageUrl.includes('product_barrier_cream_')) return true;
+  if (row.id === 'prod-botanical-mist' && row.imageUrl.includes('product_botanical_mist_')) return true;
+  if (row.id === 'prod-marine-collagen' && row.imageUrl.includes('product_cryo_serum_')) return true;
+  if (row.id === 'prod-night-recovery' && row.imageUrl.includes('product_barrier_cream_')) return true;
+  if (row.id === 'prod-hk-ritual-set' && row.imageUrl.includes('hero_dufreez_campaign_')) return true;
+  return false;
+}
+
+async function migrateLegacyCatalogIfNeeded(): Promise<void> {
+  const seedIds = SEED_PRODUCTS.map((p) => p.id);
+  const existingSeedRows = await db
+    .select()
+    .from(products)
+    .where(inArray(products.id, seedIds));
+
+  const legacyRows = existingSeedRows.filter(isLegacySeedProductRow);
+  if (legacyRows.length > 0) {
+    const seedById = new Map(SEED_PRODUCTS.map((p) => [p.id, p]));
+    await db.transaction(async (tx) => {
+      for (const row of legacyRows) {
+        const updated = seedById.get(row.id);
+        if (!updated) continue;
+        await tx
+          .update(products)
+          .set({
+            sku: updated.sku,
+            category: updated.category,
+            name: updated.name,
+            subtitle: updated.subtitle,
+            description: updated.description,
+            ingredients: updated.ingredients,
+            volume: updated.volume,
+            priceHkd: updated.priceHkd,
+            compareAtHkd: updated.compareAtHkd ?? null,
+            stock: updated.stock,
+            tag: updated.tag ?? null,
+            imageUrl: updated.imageUrl,
+            updatedAt: new Date(),
+          })
+          .where(eq(products.id, updated.id));
+
+        await tx
+          .update(orderItems)
+          .set({
+            sku: updated.sku,
+            name: updated.name,
+            imageUrl: updated.imageUrl,
+          })
+          .where(eq(orderItems.productId, updated.id));
+      }
+    });
+  }
+
+  // Upgrade legacy skincare category labels in site_settings (only if legacy labels still exist)
+  const configRows = await db
+    .select()
+    .from(siteSettings)
+    .where(eq(siteSettings.key, SITE_CONFIG_KEY))
+    .limit(1);
+
+  if (configRows.length > 0) {
+    const stored = configRows[0].value;
+    if (Array.isArray(stored?.categories) && stored.categories.length > 0) {
+      const defaultBySlug = new Map(DEFAULT_SITE_CONFIG.categories.map((c) => [c.slug, c]));
+      let changed = false;
+      const nextCategories = stored.categories.map((cat) => {
+        const replacement = defaultBySlug.get(cat.slug);
+        if (!replacement || !cat.label) return cat;
+        const hasLegacy =
+          LEGACY_CATEGORY_LABELS.has(cat.label.zh) ||
+          LEGACY_CATEGORY_LABELS.has(cat.label.en) ||
+          LEGACY_CATEGORY_LABELS.has(cat.label.ko);
+        if (!hasLegacy) return cat;
+        changed = true;
+        return {
+          ...cat,
+          label: {
+            zh: LEGACY_CATEGORY_LABELS.has(cat.label.zh) ? replacement.label.zh : cat.label.zh,
+            en: LEGACY_CATEGORY_LABELS.has(cat.label.en) ? replacement.label.en : cat.label.en,
+            ko: LEGACY_CATEGORY_LABELS.has(cat.label.ko) ? replacement.label.ko : cat.label.ko,
+          },
+        };
+      });
+
+      if (changed) {
+        await db
+          .update(siteSettings)
+          .set({
+            value: { ...stored, categories: nextCategories },
+            updatedAt: new Date(),
+          })
+          .where(eq(siteSettings.key, SITE_CONFIG_KEY));
+      }
+    }
+  }
+}
 
 async function ensureSeeded(): Promise<void> {
   if (!seedPromise) {
     seedPromise = (async () => {
       const existing = await db.select({ id: products.id }).from(products).limit(1);
-      if (existing.length > 0) return;
+      if (existing.length > 0) {
+        await migrateLegacyCatalogIfNeeded();
+        return;
+      }
 
       await db.transaction(async (tx) => {
         const recheck = await tx.select({ id: products.id }).from(products).limit(1);
@@ -78,6 +209,7 @@ async function ensureSeeded(): Promise<void> {
               phone: m.phone,
               district: m.district,
               tier: m.tier,
+              role: m.role,
               preferredLang: m.preferredLang,
               totalOrders: m.totalOrders,
               totalSpentHkd: m.totalSpentHkd,
@@ -144,12 +276,18 @@ async function ensureSeeded(): Promise<void> {
           }
         }
       });
+
+      await migrateLegacyCatalogIfNeeded();
     })().catch((err) => {
       seedPromise = null;
       throw err;
     });
   }
   await seedPromise;
+}
+
+export async function ensureDatabaseReady(): Promise<void> {
+  await ensureSeeded();
 }
 
 function mapProductRow(row: typeof products.$inferSelect): Product {
@@ -1204,10 +1342,9 @@ export function isOrderStatus(value: unknown): value is OrderStatus {
   );
 }
 
-const SITE_CONFIG_KEY = 'storefront';
-
 export async function getSiteConfig(): Promise<SiteConfig> {
   try {
+    await ensureSeeded();
     const rows = await db
       .select()
       .from(siteSettings)
